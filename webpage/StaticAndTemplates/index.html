@@ -28,6 +28,10 @@
 							<div class="inner">
 								<h1>World Word</h1>
 								<p><!--[-->A site for translation, connection, and language-learning<!--]--></p>
+
+
+    							
+
 							</div>
 						</div>
 						<nav>
@@ -35,7 +39,7 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Translator</a></li>
 								<li><a href="#about">Chatroom</a></li>
-								<li><a href="#contact">Register</a></li>
+								<li><a href="#contact">Login</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -66,7 +70,21 @@
 							</article>
 
 						<!-- Contact -->
+						
 							<article id="contact">
+								<h2 class="major">Login</h2>
+								<div id="container">       
+									<form method="post" action="#">
+									<label for="username">Username:</label>
+									<input type="text" id="username" name="username">
+									<label for="password">Password:</label>
+									<input type="password" id="password" name="password">
+									<div id="lower">
+									<input type="checkbox"><label for="checkbox">Keep me logged in</label>
+									<input type="submit" value="Login">
+									</div><!--/ lower-->
+									</form>
+									</div>
 								<h2 class="major">Register</h2>
 								<form method="post" action="#">
 									<div class="field half first">
@@ -77,12 +95,9 @@
 										<label for="email">Email</label>
 										<input type="text" name="email" id="email" />
 									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
+
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="submit" value="Register" class="special" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
@@ -344,6 +359,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</footer>
 
 			</div>
+
 
 		<!-- BG -->
 			<div id="bg"></div>
