@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-import requests
+from flask import requests
 
 
 
@@ -20,10 +20,3 @@ else:
     #failed
     print("Error #" + str(result['error_code']) + " " + result['error_message'])
 
-app = Flask("MyWebsite")
- 
-@app.route('/<string:page_name>/')
-def render_static(page_name):
-    return render_template("Desktop/Python/Webpage/webpage/StaticAndTemplates/index.html")
-
-app.run()
